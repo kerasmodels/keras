@@ -1,0 +1,63 @@
+CNN THEORY
+Convolutional Neural Network (CNN):
+
+CNN is a type of deep learning neural network primarily used for image recognition and computer vision tasks.
+It applies convolutional layers to automatically learn spatial hierarchies of patterns within an image.
+
+Convolution:
+Convolution is a fundamental operation in CNNs where a filter/kernel slides over an input image to extract features.
+The filter applies element-wise multiplication and sums the results to produce a feature map.
+
+Filter/Kernel:
+A small matrix used in the convolution operation to extract specific features from an input image.
+Each filter is responsible for detecting a particular pattern, such as edges or textures.
+
+Feature Map:
+The output of a convolutional layer after applying multiple filters to an input image.
+It represents the presence of specific features at different spatial locations.
+
+Stride:
+Stride is the step size at which a filter moves horizontally or vertically during the convolution operation.
+A larger stride reduces the spatial dimensions of the feature map, affecting the output size.
+
+Padding:
+Padding involves adding extra pixels around the input image to preserve spatial dimensions after convolution.
+It helps avoid information loss at the borders of the image.
+
+Pooling:
+Pooling is a downsampling technique used to reduce the spatial dimensions of the feature map.
+Common pooling types include Max Pooling (selecting the maximum value in a local region) and Average Pooling (calculating the average value).
+
+Activation Function:
+An activation function introduces non-linearity to the output of a neuron, enabling the network to learn complex relationships.
+Common activation functions in CNNs include ReLU (Rectified Linear Unit) and sigmoid.
+
+Fully Connected Layer:
+After convolutional and pooling layers, fully connected layers process flattened feature maps to make predictions.
+These layers connect every neuron to every neuron in the previous and subsequent layers.
+
+Backpropagation:
+Backpropagation is the training process in which the network adjusts its parameters (weights and biases) based on the calculated error during training.
+It uses optimization algorithms like gradient descent to minimize the loss function.
+
+Loss Function:
+The loss function measures the difference between predicted and actual outputs during training.
+It helps the network to adjust its parameters to minimize the error.
+
+Activation Map:
+The output of a layer after applying the activation function, such as ReLU, is known as the activation map.
+It highlights the regions of the input that are most important for making predictions.
+
+Transfer Learning:
+Transfer learning is a technique where a pre-trained CNN model is used as a starting point for a new, related task.
+By leveraging knowledge from a larger dataset, it can speed up training and improve performance on the new task.
+
+Data Augmentation:
+Data augmentation is a method to increase the diversity of the training data by applying transformations (e.g., rotation, scaling) to the images.
+It helps prevent overfitting and improves the model's ability to generalize.
+
+Epoch:
+An epoch is one complete cycle of training, where the entire training dataset is fed to the network once.
+
+Training usually involves running multiple epochs to allow the model to learn from the data iteratively.
+Convolutional Neural Networks have revolutionized computer vision tasks and are widely used in various applications, from object detection to image segmentation.
